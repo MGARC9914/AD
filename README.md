@@ -18,14 +18,28 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>Install Active Directory</h2>
 
-- Install both Windows Server and Windows 10  VMs.
+- Install both Windows Server and Windows 10 VMs.
 <img src="https://i.imgur.com/2M7SwNl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/vPWYTgU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-- Step 2
-- Step 3
-- Step 4
+
+- On the Windows Server virtual machine you will have server manager open up.
+ <img src="https://i.imgur.com/V5HJKit.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- In server manger click on "Add roles and features" to install Active directory into the virtual machine.
+<img src="https://i.imgur.com/62Rw3ft.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DBpP26p.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/GySGG9Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
+- Now Active Directory should appear in server mmanger after restarting the VM.
+<img src="https://i.imgur.com/p9T5RnS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
+
+
+
 
 <h2>Deployment and Configuration Steps</h2>
 
