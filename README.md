@@ -73,7 +73,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <li> Since Windows 10 vm is connected to the Windows Server vm DNS server now we can connect client 1 vm to the dommain we created earlier(mydomain.com).</li>
 </p>
 <p>
-<li> First we  go to Settings->About->Rename the PC(advanced).</li>
+<li> First we  go to Settings->About->Rename this PC(advanced).</li>
 </p>
 <p>
 <img src= "https://i.imgur.com/0MWXftA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -85,6 +85,58 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src= "https://i.imgur.com/ujtHqly.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src= "https://i.imgur.com/DV6voSL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>
+<li> Type in the usernamme and password.</li>
+</p>
+<p>
+<img src= "https://i.imgur.com/V5r8xei.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src= "https://i.imgur.com/b2n7nOs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
 
 <br />
+
+<p>
+<li> Next we're going to allow normal users to remote desktop within the enviornment. </li>
+</p>
+<p>
+<img src= "https://i.imgur.com/sAkQLg3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<li> Now all domain users can use RDP. </li>
+</p>
+<br />
+
+<p>
+<li> After we're going to create a bunch of users in active directory using powershell. </li>
+<li> The script used was found in the internet their are many of them. </li>
+</p>
+<p>
+<img src= "https://i.imgur.com/qpYqaFW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src= "https://i.imgur.com/WBsw8rQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<li> When you're done click the start button. </li>
+</p>
+<p>
+<img src= "https://i.imgur.com/Epqe6RN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src= "https://i.imgur.com/6kclI0B.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<p>
+<li> Lastly I'm purposely going to type in the wrong password to disable one of the accounts in active directory. </li>
+</p>
+<p>
+<img src= "https://i.imgur.com/t0YjKPK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<li> After go back to the Windows Server vm and look for the username that got their account disable and enable it back by right clicking the username or you can also reset their password as well. </li>
+</p>
+<p>
+<img src= "https://i.imgur.com/mwA40T4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+
 
