@@ -44,25 +44,47 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<li> Before we continue we got to make sure that our Windows Server vm private IP address is set to static.</li>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src= "https://i.imgur.com/BAS9UuY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<li> Next on the "Active Directory Domain Services Configuration Wizard" we are creating our domain.</li>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src= "https://i.imgur.com/5Mw43sX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src= "https://i.imgur.com/hC8CSjh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<li> Now that the Windows Server vm has its own DNS server we need to connect the windows 10 vm(client-1) through Azure.</li>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src= "https://i.imgur.com/5SuboEt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src= "https://i.imgur.com/fCm9aVV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
+<p>
+<li> Since Windows 10 vm is connected to the Windows Server vm DNS server now we can connect client 1 vm to the dommain we created earlier(mydomain.com).</li>
+</p>
+<p>
+<li> First we  go to Settings->About->Rename the PC(advanced).</li>
+</p>
+<p>
+<img src= "https://i.imgur.com/0MWXftA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<li> Then click on "Change...". After click Domain and type in the domain we created earlier which was domain.com. The click "ok" when finished.</li>
+</p>
+<p>
+<img src= "https://i.imgur.com/ujtHqly.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src= "https://i.imgur.com/DV6voSL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<br />
+
